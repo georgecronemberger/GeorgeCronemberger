@@ -52,7 +52,7 @@ struct Vetor{
     }
 
     void reserve(int capacit){
-        int salvar[this->_capacidade]; // capacida pode ta cheia
+        int salvar[this->_capacidade]; // capacidade pode ta cheia
 
         for(int i = 0; i < this->_size; i++)
         salvar[i] = this->_data[i];
@@ -89,6 +89,6 @@ int main()
     cout<<pt.at(2)<<"\n";
     cout<<pt.size()<<"\n";
     cout<<pt.capacity()<<"\n";
-    //cout << "Hello World!" << endl;
+
     return 0;
 }
