@@ -51,19 +51,19 @@ struct Vetor{
         return this->_capacidade;
     }
 
-    void reserve(int capacit){
+    void reserve(int capacity){
         int salvar[this->_capacidade]; // capacidade pode ta cheia
 
         for(int i = 0; i < this->_size; i++)
         salvar[i] = this->_data[i];
 
 
-        if(capacit >= this->_size)
-            this->_capacidade = capacit;
+        if(capacity >= this->_size)
+            this->_capacidade = capacity;
 
-        else if(capacit < this->_size){
-            this->_capacidade = capacit;
-            this->_size = capacit;
+        else if(capacity < this->_size){
+            this->_capacidade = capacity;
+            this->_size = capacity;
         }
 
         for(int j = 0; j < this->_size;j++)
