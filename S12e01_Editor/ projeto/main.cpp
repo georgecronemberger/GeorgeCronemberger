@@ -91,11 +91,13 @@ int main()
 
 
                 }
-                else if(event.key.code == sf::Keyboard::Left){
-                    amb.cursor--;
+                else if(event.key.code == sf::Keyboard::Left){ else if(event.key.code == sf::Keyboard::Left){
+                    if(amb.cursor != amb.texto.begin())
+                     amb.cursor--;
                 }
                 else if(event.key.code == sf::Keyboard::Right){
-                    amb.cursor++;
+                    if(amb.cursor != amb.texto.end())
+                        amb.cursor++;
                 }
             }
         }
